@@ -1,2 +1,3 @@
 # PrimarySchool
-My first try for building my own UML structure of a School business model.
+My first ever try for building my own UML structure of an application for managing a Primary School business model.
+
