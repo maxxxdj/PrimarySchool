@@ -35,8 +35,10 @@ public class TeacherTests {
         int lessonsLeft = mathTeacher.getLessonsAmount();
         assertEquals(27, lessonsLeft);            // expected 27
     }
-    // more tests to come...
+    // more tests for English Teacher here...
 
+    
+    
     //Math Teacher
     @Test
     public void testMathTeacherLessons() {
@@ -45,7 +47,7 @@ public class TeacherTests {
         int lessonsLeft = mathTeacher.getLessonsAmount(); // expected 17
         assertEquals(17, lessonsLeft);
     }
-    // more tests to come...
+    // more tests for Math Teacher here...
     
     
     //Cleaner
@@ -54,7 +56,7 @@ public class TeacherTests {
         cleaner.setSalary(200); //set to 200
         assertEquals(200,cleaner.getSalary(), 0);
     }
-    // more tests to come...
+    // more tests for Cleaner here...
 }
 
 
