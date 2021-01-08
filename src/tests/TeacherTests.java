@@ -34,7 +34,7 @@ public class TeacherTests {
                     39, 860, Gender.MALE, "Bulgaria");
             teacher.giveLesson(20); // actual 27
             int lessonsLeft = teacher.getLessonsAmount();
-            assertEquals("The amount of lessons is not correct",    7, lessonsLeft); // expected 7
+            assertEquals(7, lessonsLeft); // expected 7
         } catch (IllegalArgumentException e) {
             throw new IllegalArgumentException(e.getMessage());
         }
