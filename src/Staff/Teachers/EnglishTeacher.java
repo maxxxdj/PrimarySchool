@@ -1,5 +1,6 @@
 package Staff.Teachers;
 
+import Staff.EmployeePerson;
 import enums.Gender;
 import messages.Prints;
 
@@ -21,8 +22,14 @@ public class EnglishTeacher extends Teacher {
     }
 
     @Override
-    public void getLessonsLeft() {
-        System.out.print(prints.getLessonsInfo(super.getFullName(),this.lessonsForSemester,"English language") + "\n");
+    public void printLessonsLeft() {
+        System.out.print(prints.getLessonsInfo(super.getFullName(), this.lessonsForSemester, "English language") + "\n");
     }
+
+    @Override
+    public int getLessonsAmount() {
+        return this.lessonsForSemester;
+    }
+
 
 }

@@ -2,7 +2,7 @@ package Interfaces;
 
 import enums.Gender;
 
-public interface Employee   {
+public interface Employee {
 
 
     //personal options

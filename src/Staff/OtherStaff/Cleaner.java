@@ -1,7 +1,6 @@
 package Staff.OtherStaff;
 
-import Interfaces.Employee;
-import Staff.EmployeePerson;
+import Controllers.CleaningController;
 import enums.Gender;
 
 public class Cleaner extends MaintenanceProfile implements CleaningController {

@@ -21,10 +21,14 @@ public class MathTeacher extends Teacher {
     }
 
     @Override
-    public void getLessonsLeft() {
+    public void printLessonsLeft() {
         System.out.print(prints.getLessonsInfo(super.getFullName(),this.lessonsForSemester, "Maths") + "\n");
     }
 
+    @Override
+    public int getLessonsAmount() {
+        return this.lessonsForSemester;
+    }
     //salary options
 
 
