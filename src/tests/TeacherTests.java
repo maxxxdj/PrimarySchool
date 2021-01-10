@@ -39,9 +39,10 @@ public class TeacherTests {
 
     }
 
-    //Comparator by age
+    //Comparing by age
+    //If age is equal - then sorting lexicographically
     @Test
-    public void testTeacherComparator(){
+    public void testTeacherComparatorByAge(){
         List<Teacher> sorted = teachers.stream()
                 .sorted(new TeacherComparator())
                 .collect(Collectors.toList());
