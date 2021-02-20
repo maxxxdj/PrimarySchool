@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Primary School</title>
+</head>
+<body>
+<div>
+    <h1>Employees</h1>
+    <table border="1">
+        <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Second Name</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="employee:${listEmployees}">
+            <td th:text="${employee.getFirstName}"></td>
+            <td th:text="${employee.getSecondName}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
